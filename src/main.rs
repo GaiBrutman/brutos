@@ -2,8 +2,8 @@
 #![no_main]
 use core::panic::PanicInfo;
 
-mod vga;
 mod macros;
+mod vga;
 
 /// The kernel entry point
 #[no_mangle]
