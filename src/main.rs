@@ -2,6 +2,9 @@
 #![no_main]
 use core::panic::PanicInfo;
 
+mod vga;
+mod macros;
+
 /// The kernel entry point
 #[no_mangle]
 pub extern "C" fn _start() -> ! {
