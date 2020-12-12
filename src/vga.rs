@@ -137,3 +137,9 @@ lazy_static! {
         ColorCode::new(Color::Yellow, Color::Black),
     ));
 }
+
+#[doc(hidden)]
+pub fn _print(args: fmt::Arguments) {
+    use core::fmt::Write;
+    WRITER.lock().write_fmt(args).unwrap();
+}
