@@ -134,7 +134,7 @@ impl fmt::Write for Writer {
 lazy_static! {
     pub static ref WRITER: Mutex<Writer> = Mutex::new(Writer::new(
         unsafe { &mut *(VGA_MEM_ADDR as *mut Buffer) },
-        ColorCode::new(Color::Yellow, Color::Black),
+        ColorCode::new(Color::Green, Color::Black),
     ));
 }
 
